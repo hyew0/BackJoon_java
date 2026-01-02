@@ -108,12 +108,12 @@ int fail = nullObj; // (X) 런타임 에러 발생
 |저장 내용|실제 데이터 값(Value) 자체를 저장|데이터가 위치한 메모리 주소(Reference) 저장|
 |메모리 영역|스택(Stack) 영역에 값 저장|힙(Heap) 영역에 실제 객체 저장(스택에는 그 주소값만 저장)|
 |Null 허용|불가능(반드시 값이 할당되어야 함)|가능(가리키는 객체가 없음을 의미)|
-|기본값|"0, 0.0, false 등(자료형에 따라 다름)"|null|
+|기본값|0, 0.0, false 등(자료형에 따라 다름)|null|
 |제네릭 사용|불가능(List<int> ❌ → Wrapper Class 필요)|가능(List<Integer> ⭕)|
-|산술 연산|가능 (사칙연산 등)|"불가능(단, 언박싱(Unboxing) 후 가능)"|
+|산술 연산|가능 (사칙연산 등)|불가능(단, 언박싱(Unboxing) 후 가능)|
 |메모리 크기|자료형별로 고정됨 (예: int는 4byte)|객체의 속성 및 크기에 따라 가변적|
 |접근 속도|빠름 (메모리 직접 접근)|상대적으로 느림 (주소를 타고 접근)|
-|종류(예시|"boolean, char, byte, shortint, long, float, double (총 8개)"|"String, Array([]), ClassInterface, Enum, Wrapper Class 등"|
+|종류(예시|boolean, char, byte, shortint, long, float, double (총 8개)|String, Array([]), ClassInterface, Enum, Wrapper Class 등|
 
 #### [심화: 기본형 vs 참조형 vs 래퍼 클래스 비교]
 - 래퍼 클래스는 참조 자료형의 일종이지만, 기본 자료형을 객체화한다는 특수성이 있어 별도 비교가 필요함
